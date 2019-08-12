@@ -14,7 +14,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |message|text|null: false|
-|image|string||
+|image|string|null: false|
 
 
 
@@ -29,7 +29,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |message_id|integer|null: false|
-|group_name|string|null: false|
+|group_name|string|c|
 
 
 ###Association
