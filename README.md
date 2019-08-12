@@ -12,9 +12,11 @@
 ##messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
-|image|string|ooooo|
+|message|text|null: false|
+|image|string||
+
+
 
 ###Association
 - belongs_to :group
