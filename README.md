@@ -14,7 +14,7 @@
 |------|----|-------|
 |message|text|null: false|
 |user_id|integer|null: false, foreign_key: true|
-|image|string||
+|image|string|ooooo|
 
 ###Association
 - belongs_to :group
