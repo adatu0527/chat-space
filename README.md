@@ -30,7 +30,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |message_id|integer|null: false|
-|group_name|string||
+|group_name|string| |
 
 
 ###Association
