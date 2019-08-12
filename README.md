@@ -1,22 +1,23 @@
-##userテーブル
+##usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|e-mail|string|unique: true|
+|name|string|null: false,index: true|
+
 
 ###Association
 - has_many :messages
-- has_many :groups
+- has_many :groups_users
+- has_many :groups, through: :groups_users
 
-##messageテーブル
+##messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|message|text|null: false|
+|user_id|references|null: false, foreign_key: true|
+|message|text||
 |image|string||
-
+|group_id|references|null: false, foreign_key: true|
 
 
 ###Association
@@ -24,26 +25,25 @@
 - belongs_to :user
 
 
-##groupテーブル
+##groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|message_id|integer|null: false|
-|group_name|string| |
+|name|string| |
 
 
 ###Association
-- has_many :users
+- has_many :users, through: :groups_users
 - has_many :messages
+- has_many :group_users
 
 
 ## groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
