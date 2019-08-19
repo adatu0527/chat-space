@@ -7,9 +7,7 @@
     width: 100vw;
     color:$color-white;
     
-    
     .notice {
-      
       height: 100%;
       
     }
@@ -29,8 +27,6 @@
 
     .side-header {
       height: 100px;
-      // position: absolute;
-      // top: 0;
       padding: 0 20px;
       background-color: #253141;
       width: 300px;
@@ -49,22 +45,15 @@
           float:left;
           text-align: center;
 
-          
-
         }
       
          &__menu {
            
-          
           line-height: 100px;
           
-         
-
-
           &__icon1 {
           float: right;
           padding: 0 5px;
-
 
             }
           
@@ -82,10 +71,7 @@
       background-color: #2f3e51;
       overflow: scroll;
       top: 0;
-      // box-sizing: border-box;
-      
-      
-       padding: 0 20px ;
+      padding: 0 20px ;
 
       &__box {
         
@@ -114,26 +100,18 @@
       padding: 0 40px;
       border:solid #eeeeee;
       border-width: 0 0 1px 0;
-      // position: absolute;
-      // top: 0;
-      
       float: right;
       box-sizing: border-box;
       width: calc(100vw - 300px);
       
-      
-      
-      
       &__left-box{
         float: left;
-        
         height: 100%;
 
         &__crrent-group {
           font-size: 20px;
           margin:35px 0 15px 0;
           color:#333333;
-
 
         }
         &__menbar-list {
@@ -196,8 +174,6 @@
           bottom: 0;
 
         }
-        
-
       }
     }
   
@@ -207,8 +183,6 @@
 
     .form {
       height: 90px;
-      // position: absolute;/*←絶対位置*/
-      // bottom: 0; /*下に固定*/
       background-color: #eeeeee;
       width: calc(100vw - 300px);
       box-sizing: border-box;
@@ -232,8 +206,6 @@
             float: right;
           }
 
-          
-
         }
 
         &__send-box {
@@ -241,16 +213,12 @@
           line-height: 50px;
           width: 100px;
           text-align: center;
-          
           background-color:#38AEF0;
           box-sizing: border-box;
           color: $color-white;
           padding: 0 30px;
 
         }
-
-        
-          
 
       }
   
