@@ -1,6 +1,11 @@
 @import "./reset";
 @import "font-awesome";
+@import "user";
+@import "config/colors";
+@import "modules/flash";
+@import "modules/side_bar";
 @import "colors";
+@import "group";
 @import "messages";
 // @import "font-awesome";
 // @import "config/colors";
@@ -11,5 +16,5 @@
 // @import "modules/side_bar";
 // @import "modules/chat";
 // @import "modules/user";
-@import "user";
+
 // @import "messages/messages.scss";
