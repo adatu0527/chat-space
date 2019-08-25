@@ -28,30 +28,8 @@
     top:0;
     float: left;
 
-    
-    .groups {
-      height: calc(100vh - 100px);
-      background-color: #2f3e51;
-      overflow: scroll;
-      top: 0;
-      padding: 0 20px ;
-
-      &__box {
-        
-        padding: 20px 0 40px 0;
-        
-        &__name {
-          font-size: 30px;
-          margin-bottom: 5px;
-
-        }
-        &__message {
-          font-size: 11px;
-        }
-      }
-
-    }
   }
+    
 
 
   .chat-main {
