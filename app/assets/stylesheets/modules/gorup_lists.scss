@@ -4,7 +4,10 @@
     overflow: scroll;
     top: 0;
     padding: 0 20px ;
-
+    a {
+      color:white;
+      text-decoration: none;
+    }
     .groupsbox {
       
       padding: 20px  0;
@@ -21,5 +24,6 @@
         font-size: 11px;
       }
     }
+    
 
   }

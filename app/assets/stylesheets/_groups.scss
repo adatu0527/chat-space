@@ -32,9 +32,9 @@
     
 
 
-  .chat-main {
-    float: left;
-    width: calc(100vw - 300px);
+  // .chat-main {
+  //   float: left;
+  //   width: calc(100vw - 300px);
     
     //  .main-header {
     //    height: 100px;
@@ -122,50 +122,50 @@
 
 
 
-    .form {
-      height: 90px;
-      background-color: #eeeeee;
-      width: calc(100vw - 300px);
-      box-sizing: border-box;
-      padding: 20px 40px ;
+    // .form {
+    //   height: 90px;
+    //   background-color: #eeeeee;
+    //   width: calc(100vw - 300px);
+    //   box-sizing: border-box;
+    //   padding: 20px 40px ;
 
-      .form-box {
-        height: 50px;
-        width: 100%;
-        background-color: #eeeeee;
+    //   .form-box {
+    //     height: 50px;
+    //     width: 100%;
+    //     background-color: #eeeeee;
         
-        &__input-box {
-          float: left;
-          line-height: 50px;
-          background-color: $color-white;
-          padding: 0 10px;
-          width: calc(100% - 140px);
-          margin-right: 15px;
-          position: relative;
+    //     &__input-box {
+    //       float: left;
+    //       line-height: 50px;
+    //       background-color: $color-white;
+    //       padding: 0 10px;
+    //       width: calc(100% - 140px);
+    //       margin-right: 15px;
+    //       position: relative;
 
-          &__icon {
-            float: right;
-          }
+    //       &__icon {
+    //         float: right;
+    //       }
 
-        }
+    //     }
 
-        &__send-box {
-          float:right;
-          line-height: 50px;
-          width: 100px;
-          text-align: center;
-          background-color:#38AEF0;
-          box-sizing: border-box;
-          color: $color-white;
-          padding: 0 30px;
+    //     &__send-box {
+    //       float:right;
+    //       line-height: 50px;
+    //       width: 100px;
+    //       text-align: center;
+    //       background-color:#38AEF0;
+    //       box-sizing: border-box;
+    //       color: $color-white;
+    //       padding: 0 30px;
 
-        }
+    //     }
 
-      }
+    //   }
   
-    }
+    // }
   
-  }
+  // }
   
 }
 
