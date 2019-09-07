@@ -1,4 +1,24 @@
 @import "./reset";
 @import "font-awesome";
-@import "colors";
+@import "user";
+@import "config/colors";
+@import "modules/flash";
+@import "modules/side_bar";
+@import "modules/gorup_lists";
 @import "messages";
+@import "colors";
+@import "group";
+@import "message";
+
+@import "groups";
+// @import "font-awesome";
+// @import "config/colors";
+// @import "config/size";
+// @import "config/reset";
+// @import "mixins/mixin";
+// @import "mixins/vendor_prefix";
+// @import "modules/side_bar";
+// @import "modules/chat";
+// @import "modules/user";
+
+// @import "messages/messages.scss";

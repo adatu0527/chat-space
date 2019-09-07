@@ -1,0 +1,61 @@
+.side-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: #253141;
+  width: 300px;
+  box-sizing: border-box;
+  width: 100%;
+  a {
+    color:white;
+    text-decoration: none;
+  }
+
+
+  &__box {
+    width: 260px;
+    
+    box-sizing: border-box;
+    height: 100px;
+    
+    &__name {
+      font-size: 30px;
+      line-height: 100px;
+      float:left;
+      text-align: center;
+
+    }
+  
+     &__menu {
+       
+      line-height: 100px;
+      &__list {
+        float: right;
+        padding-right: 5px;
+        &__icon1 {
+        
+        padding: 0 5px;
+        
+        
+        &--edit{
+          float: right;
+          text-align: center;
+          color:white;
+        }
+          &--icon {
+          
+          color:white;
+          text-align: center;
+
+          }
+        
+        }
+        &__icon2{
+          float: right;
+
+        }
+      }
+    }
+
+  }
+
+}

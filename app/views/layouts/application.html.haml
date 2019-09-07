@@ -8,6 +8,9 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   %body
+  = render 'layouts/flash'
+  - if @path.is('messages#index','messages#create')
+    = render template: 'groups/index'
   = yield
 
 

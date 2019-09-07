@@ -1,57 +1,48 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__crrent-group
+        = @group.name
+      .main-header__left-box__menbar-list
+        .menbar
+          Menbar:
+        -@group.users.each do |user|
+          .menbars
+            %chat-header__user= user.name
 
 
-
-.flash-box
-  .notice
-  グループを作成しました
-.wrapper
-
-  .chat-side
-    .side-header
-      .side-header__box
-        .side-header__box__name
-          name
-        .side-header__box__menu
-          
-          .side-header__box__menu__icon1
-            = fa_icon 'cog'
-
-          .side-header__box__menu__icon2
-            = fa_icon 'edit'
-    .groups
-      .groups__box
-        .groups__box__name
-          fff
-        .groups__box__message
-          wwww
-  .chat-main
-    .main-header
-      .main-header__left-box
-        .main-header__left-box__crrent-group
-          ss
-        .main-header__left-box__menbar-list
-          aaaaaaaaaaaaa
-      .main-header__right-box
+        
+    .main-header__right-box
+      =link_to edit_group_path(@group) do
         .main-header__right-box__edit-btm
           Edit
-    .messages
-      .message-box
-        .message-box__user-box
-          rrrrr
-          .message-box__user-box__time-box
-            2019/08/00
+  .messages
+    = render @messages
+    -# .message-box
+    -#   .message-box__user-box
+    -#     rrrrr
+    -#     .message-box__user-box__time-box
+    -#       2019/08/00
 
-        .message-box__message-box
-          ffffffffff
+    -#   .message-box__message-box
+    -#     ffffffffff
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message',placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o ', class: 'icon fa-lg'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
         
-    
-    .form
-      .form-box
-        .form-box__input-box
-          ssss
-          .form-box__input-box__icon
-            = fa_icon 'image'
-        
-        .form-box__send-box
-          send
+    -# .form-box
+    -#   .form-box__input-box
+    -#     ssss
+    -#     .form-box__input-box__icon
+    -#       = fa_icon 'image'
+    -#   .form-box__send-box
+    -#     send
+
+
+
 

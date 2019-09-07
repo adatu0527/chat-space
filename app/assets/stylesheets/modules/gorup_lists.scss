@@ -1,0 +1,29 @@
+  .groups {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    overflow: scroll;
+    top: 0;
+    padding: 0 20px ;
+    a {
+      color:white;
+      text-decoration: none;
+    }
+    .groupsbox {
+      
+      padding: 20px  0;
+      height: 60px;
+      color:white;
+      
+      &__name {
+        font-size: 30px;
+        margin-bottom: 5px;
+        color:white;
+
+      }
+      &__message {
+        font-size: 11px;
+      }
+    }
+    
+
+  }

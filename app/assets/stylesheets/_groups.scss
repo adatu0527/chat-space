@@ -1,0 +1,205 @@
+
+.flash {
+    
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+    width: 100vw;
+    color:$color-white;
+    
+      &__alert {
+        background-color: red;
+      }
+
+      &__notice {
+        background-color: #38aef0;
+      }
+}
+
+
+.wrapper {
+  margin:0;
+  padding:0;
+  z-index: 0;
+
+  .chat-side {
+    width: 300px;
+    color:$color-white;
+    top:0;
+    float: left;
+
+  }
+    
+
+
+  // .chat-main {
+  //   float: left;
+  //   width: calc(100vw - 300px);
+    
+    //  .main-header {
+    //    height: 100px;
+    //    padding: 0 40px;
+    //    border:solid #eeeeee;
+    //    border-width: 0 0 1px 0;
+    //    float: right;
+    //    box-sizing: border-box;
+    //    width: calc(100vw - 300px);
+      
+    //    &__left-box{
+    //      float: left;
+    //      height: 100%;
+
+    //      &__crrent-group {
+    //       font-size: 20px;
+    //       margin:35px 0 15px 0;
+    //        color:#333333;
+
+    //      }
+    //      &__menbar-list {
+    //        font-size: 12px;
+    //        color:#999999;
+    //      }
+    //    }
+    //    &__right-box {
+    //      float: right;
+    //      margin:30px 0 30px 0;
+    //      border:solid aqua;
+    //      border-width: 1px 1px 1px 1px;
+    //      height: 40px;
+        
+    //      color:aqua;
+    //      &__edit-btm {
+    //        padding: 0 20px;
+    //        line-height: 40px;
+    //        text-align: center;
+    //      }
+
+
+    //    }
+    //  }
+  
+    //  .messages {
+    //    background-color: #fafafa;
+    //    height: calc(100vh - 190px);
+    //    box-sizing: border-box;
+    //    padding: 46px 40px ;
+    //    margin: 100px 0 0 ;
+    //    overflow: scroll;
+
+    //    .message-box {
+    //      margin-bottom: 40px;
+    //      float: left;
+        
+    //      &__user-box {
+    //        font-size: 16px;
+    //        margin-bottom: 10px;
+    //        color:#434A54;
+          
+          
+    //        &__time-box {
+    //          float: right;
+    //          font-size: 12px;
+    //          color:#999999;
+    //          padding-left: 10px;
+    //        } 
+
+
+    //      }
+        
+        
+        
+    //      &__message-box {
+    //        font-size: 14px;
+    //        color: #434A54;
+    //        margin-bottom: 10px;
+    //        bottom: 0;
+
+    //      }
+    //    }
+    //  }
+  
+
+
+
+
+    // .form {
+    //   height: 90px;
+    //   background-color: #eeeeee;
+    //   width: calc(100vw - 300px);
+    //   box-sizing: border-box;
+    //   padding: 20px 40px ;
+
+    //   .form-box {
+    //     height: 50px;
+    //     width: 100%;
+    //     background-color: #eeeeee;
+        
+    //     &__input-box {
+    //       float: left;
+    //       line-height: 50px;
+    //       background-color: $color-white;
+    //       padding: 0 10px;
+    //       width: calc(100% - 140px);
+    //       margin-right: 15px;
+    //       position: relative;
+
+    //       &__icon {
+    //         float: right;
+    //       }
+
+    //     }
+
+    //     &__send-box {
+    //       float:right;
+    //       line-height: 50px;
+    //       width: 100px;
+    //       text-align: center;
+    //       background-color:#38AEF0;
+    //       box-sizing: border-box;
+    //       color: $color-white;
+    //       padding: 0 30px;
+
+    //     }
+
+    //   }
+  
+    // }
+  
+  // }
+  
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
