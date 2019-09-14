@@ -1,5 +1,6 @@
 $(function(){
   function buildMessage(message){
+
     var img = message.image ? `<img src= ${ message.image } > ` : "";
     var html = `<div class="message-box">
                   <div class="message-box__top-box">
