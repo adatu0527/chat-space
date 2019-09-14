@@ -18,31 +18,13 @@
           Edit
   .messages
     = render @messages
-    -# .message-box
-    -#   .message-box__user-box
-    -#     rrrrr
-    -#     .message-box__user-box__time-box
-    -#       2019/08/00
-
-    -#   .message-box__message-box
-    -#     ffffffffff
+   
   .form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'form__message',placeholder: 'type a message'
-      .form__mask
-        = f.label :image, class: 'form__mask__image' do
-          = fa_icon 'picture-o ', class: 'icon fa-lg'
-          = f.file_field :image, class: 'hidden'
-      = f.submit 'Send', class: 'form__submit'
-        
-    -# .form-box
-    -#   .form-box__input-box
-    -#     ssss
-    -#     .form-box__input-box__icon
-    -#       = fa_icon 'image'
-    -#   .form-box__send-box
-    -#     send
-
-
-
-
+      .input-box
+        = f.text_field :content, class: 'form__message',placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = fa_icon 'picture-o ', class: 'icon fa-lg'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'

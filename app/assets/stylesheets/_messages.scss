@@ -2,7 +2,6 @@
   float: left;
   width: calc(100vw - 300px);
   display: block;
-  
   .main-header {
       height: 100px;
       padding: 0 40px;
@@ -10,44 +9,34 @@
       border-width: 0 0 1px 0;
       float: right;
       box-sizing: border-box;
-      width: calc(100vw - 300px);
-      
+      width: calc(100vw - 300px);      
       flex-direction: column;
       display: block;
-
     
       &__left-box{
         float: left;
         height: 100%;
-
+        
         &__crrent-group {
         font-size: 20px;
         margin:35px 0 15px 0;
           color:#333333;
-
         }
+
         &__menbar-list {
           float:left;
           font-size: 12px;
           color:#999999;
           height: 100px;
-          
-
           display: flex;
+
           .menbar{
-            // display: flex;
-            // display: inline;
             float: left;
             padding-right: 10px;
           }
-          
-
             .menbars {
-            
-              
               padding-right: 10px;
             }
-          
         }
       }
       &__right-box {
@@ -60,15 +49,12 @@
           color:aqua;
           text-decoration: none;
         }
-      
-        color:aqua;
+  
         &__edit-btm {
           padding: 0 20px;
           line-height: 40px;
           text-align: center;
         }
-
-
       }
   }
 
@@ -78,64 +64,44 @@
       box-sizing: border-box;
       padding: 46px 40px ;
       margin-top:100px ;
-      overflow: scroll;
+      overflow: auto;
       flex-direction: column;
       display: flex;
-
+      
       .message-box {
-        // margin-bottom: 40px;
-        
-        // float: left;
-        // display: block;
-        // flex-direction: column;
+        display: block;
+        width: 100vh;
+
         .message-box__top-box {
-          // display: inline;
           height: 40px;
           width: 100vh;
-          
-        
       
           &__user-box {
             float: left;
             padding-right: 10px;
             font-weight: 600;
-
             font-size: 16px;
-            // margin-bottom: 10px;
             color:#434A54;
           }
-          
           
           &__time-box {
               padding-left: 10px;
               font-size: 12px;
               color:#999999;
               padding-left: 10px;
-              
             } 
         }
-
-
-      //   }
-      
-      
-      
         .lower-message {
           float: left;
-          font-size: 14px;
           color: #434A54;
           padding-bottom: 10px;
-          height: 20px;
-
+          
           &__content {
-            float: left;
             font-size: 14px;
-            
-          margin-bottom: 0;
-
-          }
-
-          //  
+            margin-bottom: 0;
+          }   
+          &__image{
+            }
         }
 
       }
@@ -152,19 +118,13 @@
         &__message {
           float: left;
           line-height: 50px;
-          // background-color: $color-white;
           padding: 0 10px;
           width: calc(100% - 140px);
           margin-right: 15px;
           position: relative;
-          
         
         }
         
-        // .label{
-        //   cursor: pointer;
-        //   font-size:1.5em;
-        //  }
         &__mask {
           width: calc(100% - 140px);
           height: 0;
@@ -173,40 +133,16 @@
           line-height: 50px;
           z-index: 0;
           
-
-          // display: none;
           .form__mask__image {
                float:right;
                
               .hidden {
                 visibility: hidden;
                 margin: 0;
-                
-                // position: relative;
-              
-
-              
             }
-           
               .icon {
-                // position:absolute;
-
-               
-                
-
               }
-              
-            // .icon {
-            //   color: black;
-              
-            
-            // }
-            
           }
-          
-
-
-
         }
     
         &__submit {
@@ -216,52 +152,15 @@
           text-align: center;
           background-color:#38AEF0;
           box-sizing: border-box;
-            color: white;
-            position:absolute;
+          color: white;
+          position:absolute;
           padding: 0 30px;
           z-index: 1;
 
-
         }
-      // .form-box {
-      //   height: 50px;
-      //   width: 100%;
-      //   background-color: #eeeeee;
-        
-      //   &__input-box {
-      //     float: left;
-      //     line-height: 50px;
-      //     background-color: $color-white;
-      //     padding: 0 10px;
-      //     width: calc(100% - 140px);
-      //     margin-right: 15px;
-      //     position: relative;
-
-      //     &__icon {
-      //       float: right;
-      //     }
-
-      //   }
-
-      //   &__send-box {
-      //     float:right;
-      //     line-height: 50px;
-      //     width: 100px;
-      //     text-align: center;
-      //     background-color:#38AEF0;
-      //     box-sizing: border-box;
-      //     color: $color-white;
-      //     padding: 0 30px;
-
-      //   }
-
-      // }
-
     }
   }
   
-  // label {
-  //   color: black;
-  //   width: 20px;
-  //   height: 20px;
-  // }
+  img {
+    object-fit: contain;
+  }
