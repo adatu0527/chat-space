@@ -3,11 +3,12 @@
     .message-box__top-box__user-box 
       = message.user.name  
     .message-box__top-box__time-box
-      = message.created_at.strftime("%Y/%m/%d %H:%M")
+      -# -weeks = ["日","月","火","水","木","金","土"]
+      -# -num = message.created_at.strftime("%w").to_i
+      -# -week =weeks[num]
+      = message.created_at.strftime("%Y/%m/%d (%h) %T")
   .lower-message
   - if message.content.present?
     %p.lower-message__content
       = message.content
   = image_tag(message.image) if message.image.present?
-
- 
