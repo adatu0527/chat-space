@@ -1,10 +1,6 @@
 
 
  $(function(){
-   
-  
-   
-
   function buildMessage(message){
     var img = message.image ? `<img src= ${ message.image } > ` : "";
     var html = `<div class="message-box">
@@ -23,11 +19,8 @@
                         ${img}
                     </div>
                 </div>`
-
     return html;
-
   }
-  
   $('#new_message').on('submit',function(e){
     e.preventDefault();
     var fd = new FormData(this);
@@ -44,10 +37,10 @@
       
       var html = buildMessage(message);
       $('.messages').append(html)
-      
       $('#message_content').val("")
       $('.hidden').val("")
-      
+      $('#new_message')[0].reset();
+ 
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast'); 
     })
     .fail(function(){
@@ -57,9 +50,6 @@
     .always(() => {
       $(".form__submit").removeAttr("disabled");
     });
-
-
-  
   });
 });
 
