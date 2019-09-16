@@ -73,6 +73,7 @@ $(function(){
 $(function(){
   $('.user-toadd-member').on('click' ,".user-search-remove" , function(e){
     e.preventDefault();
+
     $(this).parent().remove();
   });
 });
