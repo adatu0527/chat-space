@@ -16,8 +16,7 @@ $(function(){
                 </div>`
               return html;
   }
-  $(document).on('turbolinks:load', function() {
-
+  $(document).on('turbolinks:load', function() { 
       $('#user-search-field').on("keyup",function(e){
         e.preventDefault(); 
         var input = $("#user-search-field").val();
@@ -51,35 +50,33 @@ $(function(){
           alert('error');
         });
       });
+    });
   });
-  //追加
-  $(function(){
-    function buildEntermember(hogename,hogeid) {
-    var html = `<div class='chat-group-user'>
-                  <input name='group[user_ids][]' type='hidden' value=${hogeid}>
-                  <p class='chat-group-user__name'>${hogename}</p>
-                  <div class='user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn'>削除</div>
-                </div>`
-    return html;
-    }
-    
+//追加
+$(function(){
+  function buildEntermember(hogename,hogeid) {
+  var html = `<div class='chat-group-user'>
+                <input name='group[user_ids][]' type='hidden' value=${hogeid}>
+                <p class='chat-group-user__name'>${hogename}</p>
+                <div class='user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn'>削除</div>
+              </div>`
+  return html;
+  }
+  $(document).on('turbolinks:load', function() { 
     $('.user-search-result').on('click' ,".user-search-add" , function(e){
-      console.log("ok");
       e.preventDefault();
-      
       $(this).parent().remove();
       var hoge = this
       var hogename =$(hoge).data('name')
-      console.log(hogename);
       var hogeid =$(hoge).data('id')
-      console.log(hogeid);
       var html = buildEntermember(hogename,hogeid);
       $('.user-toadd-member').append(html);
     });
-    
   });
-  //削除
-  $(function(){
+});
+//削除
+$(function(){
+  $(document).on('turbolinks:load', function() { 
     $('.user-toadd-member').on('click' ,".user-search-remove" , function(e){
       e.preventDefault();
 
@@ -87,3 +84,4 @@ $(function(){
     });
   });
 });
+ 
