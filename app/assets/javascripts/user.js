@@ -28,15 +28,19 @@ $(function(){
         dataType: 'json' 
       })
       .done(function(users){ 
+        
         $('.user-search-result').empty();
+        
         if (users.length !== 0) {
           users.forEach(function(user){
             var html = buildMember(user);
             $('.user-search-result').append(html);
+            
           });
         }
         else {
           var errormessage= "一致するユーザーはいません"
+          console.log("ok");
           buildHtml(errormessage);
           $('.user-search-result').append(errormessage);
         };
@@ -57,14 +61,19 @@ $(function(){
               </div>`
   return html;
   }
+  
   $('.user-search-result').on('click' ,".user-search-add" , function(e){
+    console.log("ok");
     e.preventDefault();
+    
     $(this).parent().remove();
     var hoge = this
     var hogename =$(hoge).data('name')
+    console.log(hogename);
     var hogeid =$(hoge).data('id')
+    console.log(hogeid);
     var html = buildEntermember(hogename,hogeid);
-    $('.user-toadd-member').append(html)
+    $('.user-toadd-member').append(html);
   });
   
 });
