@@ -3,17 +3,16 @@ $(function(){
   function buildMember(user){
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${user.name}</p>
-                  <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id=${user.id} data-user-name=${user.name}>追加</div>
+                  <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-id=${user.id} data-name=${user.name}>追加</div>
                 </div>`
               return html;
-              
   }
   function buildHtml(errormessage) {
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">
                       ${errormessage}
                   </p>
-                  <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="ユーザーのid" data-user-name="ユーザー名">追加</div>
+                  <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-id="ユーザーのid" data-name="ユーザー名">追加</div>
                 </div>`
               return html;
   }
@@ -62,8 +61,8 @@ $(function(){
     e.preventDefault();
     $(this).parent().remove();
     var hoge = this
-    var hogename =$(hoge).attr('data-user-name')
-    var hogeid =$(hoge).attr('data-user-id')
+    var hogename =$(hoge).data('name')
+    var hogeid =$(hoge).data('id')
     var html = buildEntermember(hogename,hogeid);
     $('.user-toadd-member').append(html)
   });
