@@ -1,7 +1,12 @@
+.wrraper{
+  box-sizing: border-box;
+}
+
 .chat-main {
   float: left;
   width: calc(100vw - 300px);
   display: block;
+  
   .main-header {
       height: 100px;
       padding: 0 40px;
@@ -126,19 +131,33 @@
         }
         
         &__mask {
-          width: calc(100% - 140px);
-          height: 0;
+          width: calc(100% - 440px);
+          height: 30px;
           padding-right: 10px;
           position: absolute;
           line-height: 50px;
           z-index: 0;
+          box-sizing: border-box;
           
           .form__mask__image {
-               float:right;
+               margin-left: 900px;
+               height: 30px;
+               
+               padding: 0;
+               
+               display: block;
+                float: left;
+                width: 30px;
+
+               
+               
                
               .hidden {
+                width: 30px;
+                
                 visibility: hidden;
                 margin: 0;
+                
             }
               .icon {
               }
