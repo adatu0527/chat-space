@@ -24,7 +24,6 @@ $(function(){
     e.preventDefault();
     var fd = new FormData(this);
     var url = window.location.href +'';
-    console.log(this)
     $.ajax({
       url: url,
       type: 'POST',
