@@ -51,7 +51,7 @@ $(function(){
   function reloadMessages()  {
     if (window.location.href.match(/\/groups\/\d+\/messages/)) {
     last_message_id = $('.message-box__top-box').last().data('id');
-    console.log(last_message_id)
+    
     $.ajax({
       url: 'api/messages',
       type: 'GET',
