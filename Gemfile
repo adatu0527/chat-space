@@ -64,6 +64,7 @@ gem "font-awesome-rails"
 gem 'devise'
 
 gem 'carrierwave', '~> 2.0.0'
+gem 'fog-aws'
 
 gem 'mini_magick'
 
