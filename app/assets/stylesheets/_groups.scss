@@ -1,26 +1,29 @@
 
-.flash {
-    
-    font-size: 1rem;
-    font-weight: lighter;
-    text-align: center;
-    width: 100vw;
-    color:$color-white;
-    
-      &__alert {
-        background-color: red;
-      }
+.notification {
+  z-index: 0;
+  .flash {
+      display: inline;
+      font-size: 1rem;
+      font-weight: lighter;
+      text-align: center;
+      width: 100vw;
+      color:$color-white;
+      
+        &__alert {
+          background-color: red;
+        }
 
-      &__notice {
-        background-color: #38aef0;
-      }
+        &__notice {
+          background-color: #38aef0;
+        }
+  }
 }
-
 
 .wrapper {
   margin:0;
-  padding:0;
-  z-index: 0;
+  
+  
+  
 
   .chat-side {
     width: 300px;

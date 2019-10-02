@@ -1,11 +1,25 @@
+html,body{
+  overflow: hidden
+}
+
+
 .wrraper{
   box-sizing: border-box;
+  min-height: 100vh;
+  
+  
 }
 
 .chat-main {
+  z-index: 1;
+  box-sizing: border-box;
   float: left;
+  min-height: 100vh;
   width: calc(100vw - 300px);
   display: block;
+  
+  
+  bottom: 0;
   
   .main-header {
       height: 100px;
@@ -123,6 +137,7 @@
       box-sizing: border-box;
       padding: 20px 40px ;
       z-index: 1;
+      bottom: 0;
 
         &__message {
           float: left;
