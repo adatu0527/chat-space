@@ -51,9 +51,11 @@ $(function(){
         $(".form__submit").removeAttr("disabled");
       });
 
+
       
     });
-
+  });
+  $(document).on('turbolinks:load', function() { 
     function reloadMessages()  {
       if (window.location.href.match(/\/groups\/\d+\/messages/)) {
       
