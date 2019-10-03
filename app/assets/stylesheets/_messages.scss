@@ -138,6 +138,7 @@ html,body{
       padding: 20px 40px ;
       z-index: 1;
       bottom: 0;
+      
 
         &__message {
           float: left;
@@ -159,12 +160,13 @@ html,body{
           box-sizing: border-box;
           
           .form__mask__image {
-               margin-left: 900px;
+              //  margin-left: 900px;
                height: 30px;
-               
+              //  position: fixed ;
                padding: 0;
-               
-               display: block;
+               position: absolute;
+               right: 60px;
+              //  display: block;
                 float: left;
                 width: 30px;
 
